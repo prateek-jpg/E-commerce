@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Store | Ecommerce Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="script.js">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html"><img src="img/logo.png" alt="" width="125px"></a>
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="category.html">Categories</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="account.html">Account</a></li>
+                        <li><a href="search.html"><button id="search">Search</button></a></li>
+                    </ul>
+                </nav>
+                <a href="cart.html"><img src="img/cart.png" alt="" width="30px" height="30px"style="color:white;"></a>
+                <img src="img/menu.png" alt="" class="menu-icon" onclick="menutoggle()">
+            </div>
+            <div class="row">
+                <div class="col-2">
+                    <h1>Where Passion <br> Meets Fashion !</h1>
+                    <p>There are two types of people who will tell you that you cannot make a difference in this world:
+                        <br>
+                        those who are afraid to try and those who are afraid you will succeed</p>
+                    <a href="" class="btn">Explore Now &#8594</a>
+                </div>
+                <!-- sliders -->
+                <div class="col-2">
+                    <!-- <img src="img/image1.png" alt=""> -->
+                    <div class="slideshow-container">
+
+                        <div class="mySlides fade">
+                            <img src="img/exclusive.png" style="width:100%">
+                        </div>
+
+                        <div class="mySlides fade">
+                            <img src="img/exclusive.png" style="width:100%">
+
+                        </div>
+
+                        <div class="mySlides fade">
+                            <img src="img/exclusive.png" style="width:100%">
+                        </div>
+
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                    </div>
+                    <br>
+                    <div style="text-align:center">
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scroll Up Button -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-chevron-circle-up"></i></button>
+
+
+    <!-- Featured Categories -->
+    <div class="categories" id="categories">
+        <div class="small-container">
+            <h2 class="title">Top Categories</h2>
+            <div class="row">
+                <div class="col-3">
+                    <img src="img/category-1.jpg" alt="">
+                </div>
+                <div class="col-3">
+                    <img src="img/category-2.jpg" alt="">
+                </div>
+                <div class="col-3">
+                    <img src="img/category-3.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Featured Products -->
+
+    <div class="small-container">
+        <h2 class="title">Featured Products</h2>
+        <div class="row">
+            <div class="col-4">
+                <a href="product-details.html"><img src="img/product-1.webp" alt=""></a>
+                <h4>Peacock Blue Printed T-shirt</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>Rs. 500</p>
+            </div>
+            <div class="col-4">
+                <img src="img/product-2.webp" alt="" style="background-color: gray;">
+                <h4>Nike Running Shoes</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>Rs. 1499</p>
+            </div>
+            <div class="col-4">
+                <img src="img/product-3.jpg" alt="">
+                <h4>Track Pant</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>Rs. 799</p>
+            </div>
+            <div class="col-4">
+                <img src="img/product-4.webp" alt="">
+                <h4>US Assn. Polo T-shirt</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <p>Rs. 1199</p>
+            </div>
+
+        </div>
+        <h2 class="title">Latest Products</h2>
+        <div class="row">
+            <div class="col-4">
+                <span class="w3-tag w3-padding w3-round-small w3-red w3-center">New
+                </span>
+                <img src="img/product-5.jpg" alt="">
+                <h4>Red Printed T-shirt</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>Rs. 1299</p>
+            </div>
+            <div class="col-4">
+                <span class="w3-tag w3-padding w3-round-small w3-red w3-center">New
+                </span>
+                <img src="img/product-6.jpg" alt="">
+                <h4>Red Printed T-shirt</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>Rs. 1499</p>
+            </div>
+            <div class="col-4">
+                <span class="w3-tag w3-padding w3-round-small w3-red w3-center">New
+                </span>
+                <img src="img/product-7.jpg" alt="">
+                <h4>Red Printed T-shirt</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>Rs. 599</p>
+            </div>
+            <div class="col-4">
+                <span class="w3-tag w3-padding w3-round-small w3-red w3-center">New
+                </span>
+                <img src="img/product-8.webp" alt="">
+                <h4>Red Printed T-shirt</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <p>Rs. 2299</p>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <img src="img/product-9.webp" alt="">
+                    <h4>Red Printed T-shirt</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>Rs. 1899</p>
+                </div>
+                <div class="col-4">
+                    <span class="w3-tag w3-padding w3-round-small w3-red w3-center">New
+                    </span>
+                    <img src="img/product-10.jpg" alt="">
+                    <h4>Red Printed T-shirt</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>Rs. 899</p>
+                </div>
+                <div class="col-4">
+                    <img src="img/product-11.jpg" alt="">
+                    <h4>Red Printed T-shirt</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>Rs. 599</p>
+                </div>
+                <div class="col-4">
+                    <span class="w3-tag w3-padding w3-round-small w3-red w3-center">New
+                    </span>
+                    <img src="img/product-12.jpg" alt="">
+                    <h4>Red Printed T-shirt</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                    <p>Rs. 1599</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Offers -->
+    <div class="offer">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-2">
+                    <img src="img/exclusive.png" alt="" class="offer-img">
+                </div>
+                <div class="col-2">
+                    <p>Exclusively Available on BobStore</p>
+                    <h1>Smart Band 5</h1>
+                    <small>The Mi band 5 features a 39.9% larger (than Mi Band 4) AMOLED color full-touch display with
+                        adjustable brightness, so everything is clear as can be</small>
+                    <a href="" class="btn">Buy Now &#8594</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- testimonial -->
+    <div class="testimonial">
+        <div class="small-container">
+            <h2 class="title">Testimonials</h2>
+            <div class="row">
+                <div class="c1 col-3 ">
+                    <i class="fa fa-quote-left"></i>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non voluptate eum et maxime, ipsum
+                        facere praesentium optio libero atque adipisci eligendi obcaecati quisquam .</p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                    <img src="img/user-1.png" alt="">
+                    <h3>Jenny Duaf</h3>
+                </div>
+                <div class="c1 col-3">
+                    <i class="fa fa-quote-left"></i>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non voluptate eum et maxime, ipsum
+                        facere praesentium optio libero atque adipisci eligendi obcaecati quisquam .</p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                    <img src="img/user-2.png" alt="">
+                    <h3>Sam Johnson</h3>
+                </div>
+                <div class="c1 col-3">
+                    <i class="fa fa-quote-left"></i>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non voluptate eum et maxime, ipsum
+                        facere praesentium optio libero atque adipisci eligendi obcaecati quisquam .</p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                    <img src="img/user-3.png" alt="">
+                    <h3>Penny Peter</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- brands -->
+    <div class="brands">
+        <div class="small-container">
+            <h2 class="title">Our Partners</h2>
+            <div class="row">
+                <div class="col-5">
+                    <img src="img/logo-godrej.png" alt="">
+                </div>
+                <div class="col-5">
+                    <img src="img/logo-philips.png" alt="">
+                </div>
+                <div class="col-5">
+                    <img src="img/logo-oppo.png" alt="">
+                </div>
+                <div class="col-5">
+                    <img src="img/logo-paypal.png" alt="">
+                </div>
+                <div class="col-5">
+                    <img src="img/logo-coca-cola.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- features -->
+    <div class="features">
+        <div class="small-container">
+            <h2 class="title">Our Features</h2>
+            <div class="row">
+                <div class="col-3">
+                    <i class="fa fa-truck fa-4x" aria-hidden="true"></i>
+                    <h3>Free Shipping Method</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos impedit id
+                        accusamus quas maxime
+                        expedita nostrum atque delectus deleniti ad modi repellat debitis ipsam
+                        quisquam amet, odit voluptate
+                        recusandae distinctio? Perferendis tenetur quibusdam porro dolor dignissimos
+                        id magnam debitis vitae?</p>
+                </div>
+                <div class="col-3">
+                    <i class="fa fa-lock fa-4x" aria-hidden="true"></i>
+                    <h3>Free Shipping Method</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos impedit id
+                        accusamus quas maxime
+                        expedita nostrum atque delectus deleniti ad modi repellat debitis ipsam
+                        quisquam amet, odit voluptate
+                        recusandae distinctio? Perferendis tenetur quibusdam porro dolor dignissimos
+                        id magnam debitis vitae?</p>
+                </div>
+                <div class="col-3">
+                    <i class="fa fa-headphones fa-4x" aria-hidden="true"></i>
+                    <h3>Free Shipping Method</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos impedit id
+                        accusamus quas maxime
+                        expedita nostrum atque delectus deleniti ad modi repellat debitis ipsam
+                        quisquam amet, odit voluptate
+                        recusandae distinctio? Perferendis tenetur quibusdam porro dolor dignissimos
+                        id magnam debitis vitae?</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and ios mobile phone</p>
+                    <div class="app-logo">
+                        <img src="img/play-store.png" alt="">
+                        <img src="img/app-store.png" alt="">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="img/logo.png" alt="">
+                    <p>Our Purpose Is To Sustainably Make the Pleasure and Benefits of Sports Accessible to The Many.
+                    </p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li><i class="fa fa-facebook-square"></i> Facebook</li>
+                        <li><i class="fa fa-twitter-square"></i> Twitter</li>
+                        <li><i class="fa fa-instagram"></i> Intagram</li>
+                        <li><i class="fa fa-youtube-play"></i> YouTube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright"><i class="fa fa-copyright"></i> Copyright 2021 - Prateek Nair . All rights reserved
+            </p>
+        </div>
+    </div>
+
+    <script>
+
+        var MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight = "0px"
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "200px";
+            }
+            else {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+    <!-- js for slider -->
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+
+</body>
+
+</html>

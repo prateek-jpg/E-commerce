@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart - The Store </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="script.js">
+</head>
+
+<body>
+
+
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="img/logo.png" alt="" width="125px">
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="category.html">Categories</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="account.html">Account</a></li>
+                    <li><a href="search.html"><button id="search">Search</button></a></li>
+                </ul>
+            </nav>
+            <a href="cart.html"><img src="img/cart.png" alt="" width="30px" height="30px"></a>
+            <img src="img/menu.png" alt="" class="menu-icon" onclick="menutoggle()">
+        </div>
+
+    </div>
+
+    <!-- Scroll Up Button -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-chevron-circle-up"></i></button>
+
+
+    <!-- cart items details -->
+    <div class="small-container cart-page">
+        <table>
+            <tr>
+                <th>Products</th>
+                <th>Quantity</th>
+                <th>Subtotal</th>
+
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="img/buy-1.webp" alt="">
+                        <div>
+                            <p>Blue Printed T-Shirt</p>
+                            <small>Price: Rs. 499</small>
+                            <br>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><button id="decrement" onclick="
+                    this.parentNode.querySelector(`input[type=number]`).stepDown()"><i
+                            class="fa fa-minus-square fa-2x"></i></button> <input type="number" value="1" min="1">
+                    <button id="increment" onclick="this.parentNode.querySelector(`input[type=number]`). stepUp()"><i
+                            class="fa fa-plus-square fa-2x" aria-hidden="true"></i></button></td>
+                <td>Rs. 499</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="img/buy-2.jpg" alt="">
+                        <div>
+                            <p>Blue Printed T-Shirt</p>
+                            <small>Price: Rs. 899</small>
+                            <br>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><button id="decrement" onclick="
+                        this.parentNode.querySelector(`input[type=number]`).stepDown()"><i
+                            class="fa fa-minus-square fa-2x"></i></button> <input type="number" value="1" min="1">
+                    <button id="increment" onclick="this.parentNode.querySelector(`input[type=number]`). stepUp()"><i
+                            class="fa fa-plus-square fa-2x" aria-hidden="true"></i></button></td>
+                <td>Rs. 899</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="img/buy-3.jpg" alt="">
+                        <div>
+                            <p>Blue Printed T-Shirt</p>
+                            <small>Price: Rs. 799</small>
+                            <br>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><button id="decrement" onclick="
+                    this.parentNode.querySelector(`input[type=number]`).stepDown()"><i
+                            class="fa fa-minus-square fa-2x"></i></button> <input type="number" value="1" min="1">
+                    <button id="increment" onclick="this.parentNode.querySelector(`input[type=number]`). stepUp()"><i
+                            class="fa fa-plus-square fa-2x" aria-hidden="true"></i></button></td>
+                <td>Rs. 799</td>
+            </tr>
+        </table>
+        <div class="total-price">
+
+            <table>
+                <tr>
+                    <td>Subtotal</td>
+                    <td>Rs. 2197</td>
+                </tr>
+                <tr>
+                    <td>Tax</td>
+                    <td>Rs. 50</td>
+                </tr>
+                <tr>
+                    <td>Total</td>
+                    <td>Rs. 2247</td>
+                </tr>
+                <tr>
+                    <td><a href="shipping.html" class="btn"> Checkout </a></td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+
+
+    <!-- footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and ios mobile phone</p>
+                    <div class="app-logo">
+                        <img src="img/play-store.png" alt="">
+                        <img src="img/app-store.png" alt="">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="img/logo.png" alt="">
+                    <p>Our Purpose Is To Sustainably Make the Pleasure and Benefits of Sports Accessible to The Many.
+                    </p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li><i class="fa fa-facebook-square"></i> Facebook</li>
+                        <li><i class="fa fa-twitter-square"></i> Twitter</li>
+                        <li><i class="fa fa-instagram"></i> Intagram</li>
+                        <li><i class="fa fa-youtube-play"></i> YouTube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright"><i class="fa fa-copyright"></i> Copyright 2021 - Prateek Nair . All rights reserved
+            </p>
+        </div>
+    </div>
+
+    <script>
+
+        var MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight = "0px"
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "200px";
+            }
+            else {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+
+    </script>
+
+    <script>
+        var mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+
+    </script>
+
+    <!-- js for toggle quantity -->
+    <script>
+        const Increment = document.getElementById("increment");
+        Increment.stepUp()
+    </script>
+
+</body>
+
+</html>
