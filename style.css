@@ -725,7 +725,7 @@ width: 30%;
 }
 .about .mySlides{
     margin: 20px 0;
-    width: 1000px;
+    width: 100%;
     padding: 18px 30px;
     text-align: center;
     background: #324c66;
@@ -734,7 +734,13 @@ width: 30%;
 }
 .about .slideshow-container{
     background: #182225;
+    width:100%;
     display: flex;
+}
+@media (max-width:768px){
+    .about .slideshow-container{
+        width:100%;
+    }
 }
 .founder{
     text-align: center;
